@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <title>Online Banking System</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #042a3f;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin: 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .link {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        a {
+            background-color: #019d5c;
+            color: #F5F0F6;
+            text-align: center;
+            font-size: 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: 2px solid #019d5c;
+            border-radius: 15px;
+            padding: 15px 30px;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        a:hover {
+            background-color:#007041;
+            color:#F5F0F6;
+            border: 1px solid #007041;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        .feature {
+            background: #173a4d;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            color: #e0fff2;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, background 0.3s;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            background: #0d3245;
+            transition-delay: 0.1s;
+        }
+
+        .feature h3 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            background: #1e2019;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Reserve Bank of Asansol</h2>
+        <p class="description">Experience seamless banking services right at your fingertips. Manage your finances easily, securely, and efficiently.</p>
+        &nbsp 
+        &nbsp
+        <div class="link">
+            <a href="login.jsp">Login</a>
+            <a href="reg.jsp">Registration</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Secure Transactions</h3>
+            <p>Enjoy the highest levels of security with our advanced encryption technology.</p>
+        </div>
+        <div class="feature">
+            <h3>24/7 Support</h3>
+            <p>Our customer support team is available around the clock to assist you.</p>
+        </div>
+        <div class="feature">
+            <h3>Easy Transfers</h3>
+            <p>Transfer funds instantly with just a few clicks, anytime, anywhere.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Central Bank of Asansol Engineering College. All rights reserved.
+    </footer>
+</body>
+</html>
